@@ -1,0 +1,62 @@
+
+.wp-block-cgb-block-header-video  {
+  width: 100%;
+}
+
+.video-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: $height_desktop !important;
+  max-height: $height_desktop;
+  margin-top: $top-margin_desktop;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  &.full-width {
+    padding: 0 !important;
+    background-color: black;
+  }
+  @media screen and (max-width: 600px) {
+    max-height: $height_mobile;
+    margin-top: $top-margin_mobile;
+  }
+
+  .thumbnail-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    &.full-width {
+      background-size: cover;
+    }
+
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .video-timestamp {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      padding: 0 5px;
+      background: black;
+      color: white;
+      font-family: Lato, sans-serif;
+      font-weight: bold;
+      line-height: 15px;
+      font-size: 10px;
+    }
+  }
+}
